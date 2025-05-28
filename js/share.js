@@ -1,5 +1,9 @@
 
 function setShare(){
+    
+    if (!Kakao.isInitialized()) {
+        Kakao.init('69b60ffde33e69fed5960adba8c69b9f');
+    }
 
     // 결과 이미지 div 안에 있는 <img>태그 선택
     var resultImg = document.querySelector('#resultImg'); 
