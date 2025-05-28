@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
 
   <!-- 대표 URL 설정 -->
-  <link rel="canonical" href="https://with910dgree.netlify.app/">
+  <link rel="canonical" href="https://justasiam.netlify.app/">
 
   <!-- 페이지 설명 -->
   <meta name="description" content="신앙생활 유형 테스트">
@@ -25,15 +25,15 @@
   <meta property="og:type" content="website"> 
   <meta property="og:title" content="신앙생활 유형 테스트">
   <meta property="og:description" content="신앙생활 유형 테스트">
-  <meta property="og:image" content="https://with910dgree.netlify.app/img/초기1.jpeg">
-  <meta property="og:url" content="https://with910dgree.netlify.app/">
+  <meta property="og:image" content="https://justasiam.netlify.app/img/초기1.jpeg">
+  <meta property="og:url" content="https://justasiam.netlify.app/">
 
   <!-- Twitter 공유용 메타태그 -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="신앙생활 유형 테스트">
   <meta name="twitter:description" content="신앙생활 유형 테스트">
-  <meta name="twitter:image" content="https://with910dgree.netlify.app/img/초기1.jpeg">
-  <meta name="twitter:domain" content="https://with910dgree.netlify.app/">
+  <meta name="twitter:image" content="https://justasiam.netlify.app/img/초기1.jpeg">
+  <meta name="twitter:domain" content="https://justasiam.netlify.app/">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -247,8 +247,8 @@
       var resultAlt = resultImg.firstElementChild.alt; 
       const shareTitle = '나의 신앙생활 유형은 무엇일까? 나의 신앙생활 유형을 확인해보고 공유해보자!!'
       const shareDes=infoList[resultAlt].name;
-      const shareImage= 'https://with910dgree.netlify.app/' + 'img/초기1.jpeg';
-      const shareURL = 'https://with910dgree.netlify.app/' + 'result-' + resultAlt + '.html';
+      const shareImage= 'https://justasiam.netlify.app/' + 'img/초기1.jpeg';
+      const shareURL = 'https://justasiam.netlify.app/' + 'result-' + resultAlt + '.html';
       
       Kakao.Link.sendDefault({
         objectType: 'feed',
@@ -272,13 +272,13 @@
     function clipboardShare() {
       var resultImg = document.querySelector('#resultImg'); 
       var resultAlt = resultImg.firstElementChild.alt; 
-      const shareURL = 'https://with910dgree.netlify.app/' + 'result-' + resultAlt + '.html';
+      const shareURL = 'https://justasiam.netlify.app/' + 'result-' + resultAlt + '.html';
 
     	// 1. 새로운 element 생성
       var tmpTextarea = document.createElement('textarea');
 
       // 2. 해당 element에 복사하고자 하는 value 저장
-      tmpTextarea.value =  'https://with910dgree.netlify.app/' + 'result-' + resultAlt + '.html';
+      tmpTextarea.value =  'https://justasiam.netlify.app/' + 'result-' + resultAlt + '.html';
 
       // 3. 해당 element를 화면에 안보이는 곳에 위치
       tmpTextarea.setAttribute('readonly', '');
