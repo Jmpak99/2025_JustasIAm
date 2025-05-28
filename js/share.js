@@ -17,7 +17,7 @@ function setShare(){
     const shareImage= 'https:/justasiam.netlify.app/' + 'img/image-' + resultAlt + '.png';
 
     // 공유 페이지 URL
-    const shareURL = 'https://likelion.netlify.app/' + 'result-' + resultAlt + '.html';
+    const shareURL = 'https://justasiam.netlify.app/' + 'result-' + resultAlt + '.html';
 
     // 카카오톡 공유 메시지 전송
     Kakao.Link.sendDefault({
