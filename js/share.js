@@ -1,6 +1,6 @@
 
 function setShare(){
-    
+
     if (!Kakao.isInitialized()) {
         Kakao.init('69b60ffde33e69fed5960adba8c69b9f');
     }
@@ -17,8 +17,8 @@ function setShare(){
     // 공유 설명 : infoList에서 해당 유저의 이름 사용
     const shareDes=infoList[resultAlt].name;
 
-    const shareImage= 'https://likelion.netlify.app/' + 'img/image-' + resultAlt + '.png';
-    const shareURL = 'https://likelion.netlify.app/' + 'result-' + resultAlt + '.html';
+    const shareImage= 'https://justasiam.netlify.app/' + 'img/image-' + resultAlt + '.png';
+    const shareURL = 'https://justasiam.netlify.app/' + 'result-' + resultAlt + '.html';
 
     // 카카오톡 공유 메시지 전송
     Kakao.Link.sendDefault({
