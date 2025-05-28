@@ -14,7 +14,7 @@ function setShare(){
     const shareDes=infoList[resultAlt].name;
 
     // 공유 이미지 URL
-    const shareImage= 'https:/justasiam.netlify.app/' + 'img/image-' + resultAlt + '.png';
+    const shareImage= 'https://justasiam.netlify.app/' + 'img/image-' + resultAlt + '.png';
 
     // 공유 페이지 URL
     const shareURL = 'https://justasiam.netlify.app/' + 'result-' + resultAlt + '.html';
