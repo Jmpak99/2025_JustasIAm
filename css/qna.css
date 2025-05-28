@@ -1,0 +1,120 @@
+/* 질문 영역은 기본적으로 보이지 않게 설정 */
+#qna {
+  display: none;
+}
+
+/* 질문 박스 스타일 */
+.qBox {
+  text-align: center;
+  border-radius: 20px;
+  font-size: 24px;
+  width: 80%;
+  font-family: 'GmarketSansMedium';
+  padding : 5px 30px;
+}
+
+/* 각 답변 항목 스타일 */
+.answerList {
+  border: 1px solid #868686; ;
+  border-radius: 10px;
+  display: block;
+  width: 70%;
+  font-size: 20px;
+  padding : 5px 15px;
+  color : black;
+  background-color: white;
+  text-align: left;
+  font-family: 'GmarketSansMedium';
+}
+
+/* 링크 상태일 때의 답변 항목 스타일 */
+.answerList:link{
+  color:black; 
+  border: 1px solid #868686; ;
+  text-decoration: none;
+  border: none;
+}
+
+/* 마우스를 올리거나 포서트 됐을 때의 스타일 */
+.answerList:hover, .answerList:focus {
+  background-color: #FFD966; /* 배경색 변경 */
+  color: rgb(0, 0, 0); /* 글자색 검정 */
+  border: none; /* 테두리 제거 */
+  text-decoration: none; /* 밑줄 제거 */
+}
+
+/* 반응형 스타일 : 화면 너비가 900px 이하일 때 적용 */
+@media (max-width: 900px){
+  .qBox {
+    text-align: center;
+    font-size: 18px; /* 질문 크기 줄임 */
+    width: 90%; /* 질문 박스 너비 증가 */
+    padding : 7px 30px; /* 여백 조정 */
+  }
+
+  .answerList {
+    border: 1px solid #868686; ;
+    border-radius: 10px;
+    display: block;
+    width: 80%; /* 답변 너비 증가 */
+    font-size: 16px; /* 글자 크기 줄임 */
+    padding : 5px 15px;
+    color : black;
+    background-color: white;
+    text-align: left;
+  }
+
+  .testBoxBody{
+    font-size: 15px; /* 텍스트 설명 작게 */
+  }
+
+  #main{
+    width: 90%; /* 전체 섹션 너비 증가*/
+  }
+}
+
+/* 질문 진행 상태 표시 바 전체 컨테이너 */
+.status {
+  height: 20px; /* 높이 설정*/
+  width: 80%; /* 너비 */
+  background-color: white; /* 배경 흰색 */
+  border-radius: 20px; /* 모서리 둥글게*/
+}
+
+/* 실제 진행 바 {statusBar} 스타일 */
+.statusBar {
+  height: 100%; /* 부모의 높이를 모두 차지 */
+  border-radius: 7px; /* 모서리 둥글게*/
+
+
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#febbbb+0,fe9090+52,ff5c5c+100;Red+3D+%231 */
+  background: #ffd4d4; /* Fallback 색상 (예전 브라우저용) */
+
+  /* Firefox용 그라데이션 */
+  background: -moz-linear-gradient(top, #FC9F27 0%, #FC9F27 52%, #FC9F27 100%);
+
+  /* Chrome, Safari용 그라데이션 */
+  background: -webkit-linear-gradient(top, #FC9F27 0%, #FC9F27 52%, #FC9F27 100%);
+
+  /* 최신 브라우저용 W3C 표준 그라데이션 */
+  background: linear-gradient(to bottom, #FC9F27 0%, #FC9F27 52%, #ffa632 100%);
+
+  /* IE6~9를 위한 필터 그라데이션 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#febbbb', endColorstr='#ff5c5c', GradientType=0);
+}
+
+/* 진행률 숫자 표시 텍스트 */
+.countStatus{
+  font-family: yg-jalnan; /* 폰트 */
+  text-align: center; /* 가운데 정렬 */
+  color : #A6A6A6; /* 회색 계열 */
+  font-size: 1.2em; /* 약간 큰 글씨 */
+  margin-bottom: 10px; /* 하단 여백 */
+}
+
+/* 결과 버튼 영역 스타일 */
+.resultBtn{
+  text-align: center; /* 가운데 정렬 */
+  margin-top: 20px; /* 위 여백 */
+  display: inline; /* 인라인 표시 */
+}

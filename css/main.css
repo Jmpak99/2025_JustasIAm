@@ -1,0 +1,46 @@
+/* 메인 섹션 스타일 */
+#main {
+  background-color: rgb(248, 248, 248); /* 연한 회색 배경 */
+  width: 80%;                           /* 전체 너비의 80% */
+  text-align: center;                   /* 텍스트 가운데 정렬 */
+  border-radius: 20px;                  /* 모서리 둥글게 */
+}
+
+/* 화면 너비가 900px 이하일 때 적용되는 반응형 스타일 */
+@media (max-width: 900px) {
+  .testBoxTitle {
+    font-size: 24px;                    /* 제목 글자 크기 줄이기 */
+  }
+
+  .testBoxBody {
+    font-size: 15px;                    /* 본문 글자 크기 줄이기 */
+  }
+
+  #main {
+    width: 90%;                         /* 메인 섹션 너비를 90%로 증가 */
+  }
+}
+
+p{
+  font-size: 20px;
+}
+
+.jalan{
+  font-family:yg-jalnan;
+}  
+
+.startButton{
+  padding: 13px 50px; 
+  border: 3px solid orange;
+  color: orange;
+  border-radius: 8px;
+}
+.startButton:hover, .startButton:active{
+  background-color: orange;
+  color: whitesmoke;
+  border: 4px solid orange;
+  border-radius: 8px;
+}
+.Gmarket{
+  font-family:GmarketSansLight;
+}

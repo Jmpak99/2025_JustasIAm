@@ -1,0 +1,262 @@
+/* 
+결과페이지, 결과 공유 영역
+초기에는 숨김처리
+배경은 연한회색, 넓이 90%, 가운데 정렬, 둥근 모서리
+*/
+#result {
+  display: none;
+  background-color: whitesmoke;
+  width: 90%;
+  text-align: center;
+  border-radius: 20px;
+}
+#shareResult{
+  background-color: whitesmoke;
+  width: 80%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+/* 
+resultname은 결과 유형 이름
+강조된 글씨로 표시
+*/
+.resultname{
+  font-size: 26px;
+}
+
+/* 결과 소개 문구, 회색 문자 */
+.resultInro{
+  font-size:1.5em;
+  color: #868686;
+}
+
+/* 결과 본문*/
+.resultDesc{
+  font-size: 20px;
+  font-family: GmarketSansMedium;
+}
+
+
+/* 카카오 공유버튼, 노란색 배경, 마우스 올리면 흰색, 글자는 노란색으로 바뀜 */
+.kakao{
+  color: rgb(0, 0, 0);
+  background-color: #ffe600;
+  font-size: 20px;
+  border: 0px;
+  border-radius: 20px;
+}
+
+.kakao:hover, .kakao:focus {
+  background-color: whitesmoke;
+  color: #FEE500;
+}
+
+.resultname{
+  margin-top: 10px;
+  font-size: 2em; 
+  border: none;
+  font-family: GmarketSansMedium;
+}
+
+.resultDescTitle1, .resultDescTitle2, .resultDescTitle3, .resultDescTitle4, .resultDescTitle5{
+  font-size: 1.5em; 
+  font-family: GmarketSansMedium;
+  /* text-align: left; */
+}
+
+.resultDesc1, .resultDesc2, .resultDesc3, .resultDesc4, .resultDesc5, .resultDesc6, .resultDesc7, .resultDesc8, .resultDesc9, .resultDesc10, .resultDesc11, .resultDesc12, .resultDesc13, .resultDesc14{
+  margin-top: 10px;
+  margin-bottom: 14px;
+  font-size: 1em;
+  color: #868686;
+  /* text-align: left; */
+  font-family: GmarketSansMedium;
+}
+
+.likelionApllyImg{
+  width: 20%;
+  margin: 30px;
+}
+
+.likelionApplyText{
+  font-size: 1.7em; 
+  font-family: GmarketSansMedium;
+  margin-bottom: 30px;
+}
+
+
+/* 공유 아이콘 */
+.shareReusltBox{
+  margin-top: 40px;
+}
+.shareReuslt{
+  font-size: 1.5em; 
+  font-family: GmarketSansMedium;
+  color: #868686;
+}
+.sharebtn_custom{
+  width: 5%;
+  margin: 5px;
+}
+
+.naverIcon{
+  width: 6%;  
+  transform: translateY(2px);
+}
+
+
+/* 추천 섹션 */
+/* 타이틀, 강조된 밝은 주황색 포인트 */
+.ifU{
+  margin-top: 20px;
+  margin-bottom: 8px;
+  text-decoration: underline;
+  color: orange;
+  font-size: 1.7em;
+  font-family: GmarketSansMedium;
+}
+
+/* 그에 따른 추천사항 스타일 */
+.basic1, .basic2, .basic3{
+  font-family: GmarketSansMedium;
+  font-size: 1.2em;
+}
+
+/* 다시 테스트하기 */
+.applyBox{
+  text-align: center;
+  margin-top: 30px;
+  display: inline;
+}
+
+.reTest{
+  border : 1px solid none; 
+  padding: 15px; 
+  font-size: 1em;
+  font-weight: 600;  
+  border-radius: 10px; 
+  background-color: rgb(248, 225, 160);
+  font-family: GmarketSansMedium;
+}
+.reTest:hover{
+  background-color: orange;
+  color : white;
+  text-decoration: none;
+  text-decoration-line: none;
+}
+
+
+/* 모바일 화면 */
+/* 모바일 반응형 스타일 (1000px 이하일 때 적용) */
+@media (max-width: 1000px){
+  /* 결과 페이지 : 모바일에서는 숨김, 너비는 90% */
+  #result{
+    display: none;
+    width: 90%;
+  }
+
+  /* 결과 이름(타이틀) 글씨 크기 줄임 */
+  .resultname{
+    margin-top: 6px;
+    font-size: 1.5em; 
+    border: none;
+    font-family: GmarketSansMedium;
+  }
+
+  /* 결과 소개 문구 : 글씨 크기 줄이고 회색 유지 */
+  .resultInro{
+    font-size: 1em;
+    color: #868686;
+    font-family: GmarketSansMedium;
+  }
+
+  /* 결과 소개 문구 : 글씨 크기 축소 */
+  .resultDescTitle1, .resultDescTitle2, .resultDescTitle3, .resultDescTitle4, .resultDescTitle5{
+    font-family: GmarketSansMedium;
+    font-size: 0.9em; 
+  }
+
+  /* 결과 설명 본문 : 글씨 더 작게, 회색 유지 */
+  .resultDesc1, .resultDesc2, .resultDesc3, .resultDesc4, .resultDesc5, .resultDesc6, .resultDesc7, .resultDesc8, .resultDesc9, .resultDesc10, .resultDesc11, .resultDesc12, .resultDesc13, .resultDesc14{
+    font-size: 0.7em;
+    font-family: GmarketSansMedium;
+    color: #868686;
+  }
+
+  /* 로고 이미지 : 모바일에서 더 크게 */
+  .likelionApllyImg{
+    width: 35%;
+    margin: 25px;
+  }
+
+  /* 안내 문구 : 글씨 크기 줄임 */
+  .likelionApplyText{
+    font-size: 1.1em; 
+    font-family: GmarketSansMedium;
+    margin-bottom: 10px;
+  }
+
+  /* 공유 박스 간격 조정 */
+  .shareReusltBox{
+    margin-top: 30px;
+  }
+
+  /* 공유 텍스트 스타일 */
+  .shareReuslt{
+    font-size: 1em; 
+    font-family: GmarketSansMedium;
+    color: #868686;
+  }
+
+  /* 공유 버튼 이미지 : 너비 늘리고 간격 조정 */
+  .sharebtn_custom{
+    width: 14%;
+    margin: 5px;
+  }
+
+  /* 네이버 아이콘 위치 보정 및 크기 확대 */
+  .naverIcon{
+    transform: translateY(1px);
+    width: 17%;  
+  }
+
+  /* 추천 타이틀 문구 : 글씨 조금 줄임 */
+  .ifU{
+    margin-top: 20px;
+    margin-bottom: 8px;
+    text-decoration: underline;
+    color: orange;
+    font-size: 1.3em;
+    font-family: GmarketSansMedium;
+  }
+  
+  /* 추천 기본 항목들 : 글씨 줄이기 */
+  .basic1, .basic2, .basic3{
+    font-family: GmarketSansMedium;
+    font-size: 0.7em;
+  }
+
+  /* 다시 테스트하기 */
+  .reTest{
+    font-size: 0.8em;
+    border : 1px solid none; 
+    padding: 10px 13px; 
+    font-weight: 600;  
+    border-radius: 10px; 
+    background-color: rgb(255, 235, 179);
+  }
+
+  .reTest:hover{
+    background-color: orange;
+    color : white;
+    text-decoration: none;
+    text-decoration-line: none;
+  }
+
+  .applyBox{
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+  }
+}

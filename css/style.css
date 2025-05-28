@@ -1,0 +1,321 @@
+/* 공통 스타일 파일 불러오기 */
+@import "base.css";
+@import "navbar.css";
+@import "background.css";
+@import "slide.css";
+@import "school.css";
+
+/* 커스텀 폰트 등록 */
+/* 여기어때 잘난체 */
+@font-face {
+  font-family: 'yg-jalnan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* G마켓 산스 TTF */
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 전체 기본 폰트 지정 */
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  
+  /* 푸터 영역 디자인 */
+  .footer-clean {
+    position: absolute;
+    padding:30px 0;
+    background-color:rgb(255, 240, 191);
+    color:#4b4c4d;
+  }
+  
+  .footer-clean h3 {
+    margin-top:0;
+    margin-bottom:10px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.4;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-clean ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-clean ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-clean .item.social {
+    text-align:right;
+  }
+  
+  /* 모바일 대응(767px 이하일 때 )  */
+  @media (max-width:767px) {
+    .footer-clean .item {
+      text-align:center;
+      padding-bottom:0px;
+      line-height: 0.1;
+  
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-clean .item.social {
+      text-align:right;
+    }
+  }
+  
+  /* SNS 아이콘 스타일 */
+  .footer-clean .item.social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin-left:10px;
+    margin-top:22px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-clean .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+
+  .footer-clean .copyright {
+    margin-top:10px;
+    margin-bottom:0;
+    font-size:13px;
+    opacity:0.6;
+  }
+  
+  /* 전체 페이지 레이아웃 설정 */
+  html {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+
+    min-height: 100%;
+
+}
+
+footer {
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 100%;
+
+	padding: 10px 0;
+
+	text-align: center;
+
+	color: white;
+
+	background: rgb(255, 208, 137);
+
+}
+
+/* 이미지 공통 설정 */
+img {
+  width: 100%;
+  height: auto;
+}
+
+.goLikeLion{
+  border : 1px solid none; 
+  padding: 10px; 
+  font-weight: 600;  
+  border-radius: 20px; 
+  background-color: rgb(255, 249, 231);
+}
+.goLikeLion:hover{
+  color : orange;
+  text-decoration: none;
+  text-decoration-line: none;
+}
+
+/* 리스트 아이템에서 점 제거 */
+li{list-style: none;}
+
+
+@media (max-width:991px) {
+  .footer-clean .item.social > a {
+    margin-top:40px;
+  }
+
+}
+
+@media (max-width:767px) {
+  .footer-clean .item.social > a {
+    margin: 0px;
+  }
+  .univ{
+    width: 90px;
+    height: 90px;
+  }
+  .univName{
+    text-align: center; 
+    margin-top: 8px; 
+    font-family: 'GmarketSansMedium'; 
+    font-size: 1em;
+  }
+}
+/*모바일 슬라이드 부분*/
+/*참여대학 부분*/
+.schoolTitle_mobile{
+  margin-bottom: 0px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'GmarketSansMedium';
+  transform: translateY(-50px);
+  font-size: 30px;
+}
+.frame {
+  margin-bottom: 0px;
+}
+.frame ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.frame ul li {
+  float: left;
+  width: 125px;
+  height: 100%;
+  margin: 0 1px 0 0;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media (max-height:767px){
+  .mobile{
+    margin-bottom: 300px;
+  }
+  .frame ul li{
+    width: 125px;
+  }
+  .frame_founded ul li{
+    width: 125px;
+  }
+}
+/*창업 스토리 부분*/
+.foundedTitle_mobile{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'GmarketSansMedium';
+  transform: translateY(0px);
+  font-size: 30px;
+}
+.frame_founded {
+  height: 125px;
+  overflow: hidden;
+  margin-bottom: 0px;
+}
+.frame_founded ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.frame_founded ul li {
+  float: left;
+  width: 125px;
+  height: 100%;
+  margin: 0 1px 0 0;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+}
+/*창업 스토리 모바일 화면*/
+.founded_container_moblie{
+  display:gird;
+  grid-template-rows: repeat(auto-fill);
+  grid-template-columns: repeat(auto-fill, minmax(50%, auto));
+  text-align: left;
+
+  margin-left: 2.5%;
+}
+.founded_mobile_img{
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 2.5%;
+}
+.text_container{
+  display: inline-block;
+  width: 60%;
+  padding-top: 2%;
+}
+.founded_title{
+  font-weight: bold;
+  font-family: 'GmarketSansMedium';
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.founded_content{
+  font-weight: lighter;
+  font-size: 13px;
+
+}
+.founded_url a{
+  text-decoration: none;
+  color: gray;
+  font-size: 10px;
+}
+.founded_mobile_content_container{
+  margin-bottom: 50px;
+}
+.founded_mobile_content_container h4{
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-family: 'GmarketSansMedium';
+}
+table {
+  width: 1500px;
+  height: 4700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+td {
+  width: 350px;
+  height: 480px;
+  color:black;
+  border-radius: 5px; 
+}

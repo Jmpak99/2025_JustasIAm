@@ -1,0 +1,35 @@
+/* 표준 브라우저용 fadeIn 애니메이션 정의 (서서히 나타남) */
+@keyframes fadeIn {
+  from { opacity: 0; }  /* 처음엔 완전히 투명 */
+  to { opacity: 1; }    /* 마지막엔 완전히 불투명 */
+}
+
+/* 표준 브라우저용 fadeOut 애니메이션 정의 (서서히 사라짐) */
+@keyframes fadeOut {
+  from { opacity: 1; }  /* 처음엔 완전히 보임 */
+  to { opacity: 0; }    /* 마지막엔 완전히 투명 */
+}
+
+/* Webkit(Chrome, Safari 등) 전용 fadeIn 애니메이션 정의 */
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }  /* 처음엔 투명 */
+  to { opacity: 1; }    /* 마지막엔 보임 */
+}
+
+/* Webkit(Chrome, Safari 등) 전용 fadeOut 애니메이션 정의 */
+@-webkit-keyframes fadeOut {
+  from { opacity: 1; }  /* 처음엔 보임 */
+  to { opacity: 0; }    /* 마지막엔 투명 */
+}
+
+/* fadeIn 클래스: 요소가 0.5초 동안 서서히 나타나는 효과 */
+.fadeIn {
+  animation: fadeIn;             /* 지정한 fadeIn 애니메이션 사용 */
+  animation-duration: 0.5s;     /* 0.5초간 실행 */
+}
+
+/* fadeOut 클래스: 요소가 0.5초 동안 서서히 사라지는 효과 */
+.fadeOut {
+  animation: fadeOut;           /* 지정한 fadeOut 애니메이션 사용 */
+  animation-duration: 0.5s;     /* 0.5초간 실행 */
+}
